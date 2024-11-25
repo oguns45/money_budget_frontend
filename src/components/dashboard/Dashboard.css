@@ -1,0 +1,93 @@
+.dashboard .stats-con {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+}
+
+.dashboard .chart-con {
+    grid-column: 1 / 4;
+    height: 400px;
+}
+
+.dashboard .chart-con .amount-con {
+    display: flex;
+    /* grid-template-columns: repeat(4, 1fr); */
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.dashboard .chart-con .amount-con .income,
+.dashboard .chart-con .amount-con .expense {
+    /* grid-column: span 2; */
+}
+
+.dashboard .chart-con .amount-con .income,
+.dashboard .chart-con .amount-con .expense,
+.dashboard .chart-con .amount-con .balance {
+    background: #fcf6f9;
+    border: 2px solid #ffffff;
+    box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.06);
+    border-radius: 20px;
+    padding: 1rem;
+}
+
+.dashboard .chart-con .amount-con .income p,
+.dashboard .chart-con .amount-con .expense p,
+.dashboard .chart-con .amount-con .balance p {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.dashboard .chart-con .amount-con .balance {
+    grid-column: 2 / 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboard .chart-con .amount-con .balance p {
+    color: var(--color-green);
+    opacity: 0.6;
+    font-size: 1.5rem;
+}
+
+.dashboard .history-con {
+    grid-column: 4 / -1;
+}
+
+.dashboard .history-con h2 {
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dashboard .history-con .salary-title {
+    font-size: 1.2rem;
+}
+
+.dashboard .history-con .salary-title span {
+    font-size: 1.8rem;
+}
+
+.dashboard .history-con .salary-item {
+    background: #fcf6f9;
+    border: 2px solid #ffffff;
+    box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.06);
+    padding: 1rem;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard .history-con .salary-item p {
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+.innerlayout{
+    padding: 2rem 1.5rem;
+    width: 100%;
+}
